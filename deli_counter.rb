@@ -14,8 +14,8 @@ end
 
 def take_a_number(katz_deli, name)
   $i += 1
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{$i} in line."
+  katz_deli.push($i)
+  puts "You are ticket number #{$i}."
   
 end
 
@@ -23,7 +23,7 @@ def now_serving(array)
   if array.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{array[0]}."
+    puts "Currently serving ticket number #{array[0]}."
     array.shift
   end
 end
