@@ -1,4 +1,5 @@
 katz_deli = []
+$i = 0
 
 def line(array)
   if array.length < 1
@@ -12,13 +13,9 @@ def line(array)
 end
 
 def take_a_number(katz_deli, name)
-  i = 1
-  
-  i += 1
+  $i += 1
   katz_deli.push(name)
-  
-  
-  puts "Welcome, #{name}. You are number #{i} in line."
+  puts "Welcome, #{name}. You are number #{$i} in line."
   
 end
 
@@ -26,7 +23,7 @@ def now_serving(array)
   if array.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{array[0]}."
+    puts "Currently serving #{$i}."
     array.shift
   end
 end
