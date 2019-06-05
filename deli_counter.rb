@@ -12,8 +12,16 @@ def line(array)
 end
 
 def take_a_number(katz_deli, name)
+  i = 1
+  while i >= 1
+  
+  end
+  i += 1
   katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  
+  
+  puts "Welcome, #{name}. You are number #{i+1} in line."
+  
 end
 
 def now_serving(array)
